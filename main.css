@@ -1,0 +1,302 @@
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+header{
+    width: 100%;
+    height: 100px;
+    background-color: gray;
+}
+.text{
+    margin: 0;
+    padding: 30px;
+    height: 100vh;
+}
+.editorText{
+    display: flex;
+    justify-content: space-around;
+    width: 180px;
+}
+.menuEdit ul{
+    position: absolute;
+    list-style-type: none;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+    border: 0px;
+    border-radius: 5px;
+    width: 160px;
+    padding: 5px 0 5px 15px;
+    margin: 5px 0 0;
+    display: none; 
+    cursor: pointer;
+}
+.edit{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    width: 50%;
+    margin: auto;
+}
+button{
+    width: 40px;
+    height: 40px;
+    border-radius: 5px !important;
+    border: 0;
+    padding: 0;
+}
+i{
+    font-size: 20px;
+}
+.boldText{
+    font-weight: bold;
+}
+.italicText{
+    font-style: italic;
+}
+.underlineText{
+    text-decoration: underline;
+}
+.strikethroughText{
+    text-decoration: line-through;
+}
+.left-align-text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.center-align-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.right-align-text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.active{
+    box-shadow: 5px 5px 5px black;
+}
+.box:nth-of-type(1){
+    margin: 0;
+}
+.box{
+    width: 70px;
+    height: 70px;
+    border-radius: 5px;
+    margin: 0px 0 10px 10px;
+}
+.firstLine{
+    display: flex;
+}
+.green{
+    background-color: green;
+}
+.lightgreen{
+    background-color: lightgreen;
+}
+.lightseagreen{
+    background-color: lightseagreen;
+}
+.limegreen{
+    background-color: limegreen;
+}
+.lightskyblue{
+    background-color: lightskyblue;
+}
+.lightsteelblue{
+    background-color: lightsteelblue;
+}
+.palevioletred{
+    background-color: palevioletred;
+}
+.plum{
+    background-color: plum;
+}
+.darkslategrey{
+    background-color: darkslategrey;
+}
+.darkslateblue{
+    background-color: darkslateblue;
+}
+.lightyellow{
+    background-color: lightyellow;
+}
+.lightsalmon{
+    background-color: lightsalmon;
+}
+.changeBackground input{
+    border: 0;
+    background-color: white;
+    padding: 20px;
+}
+.activeColorChange{
+    color: rgb(129, 216, 253);
+}
+.boxBackgroundColor{
+    width: 70px;
+    height: 70px;
+    border-radius: 5px;
+    margin: 0px 0 10px 10px;
+}
+.image{
+    display: none;
+}
+img{
+    width: 30%;
+    height: 30%;
+    margin: 0 0 10px 10px;
+}
+.personImage{
+    display: none;
+}
+.chooseImage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.f1{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.input{
+    margin: 0px 0 20px ;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+.input:focus{
+    outline: none;
+}
+.input:nth-of-type(3){
+    background-color: lightslategrey;
+    color: #fff;
+    margin: 0ch;
+}
+
+.appendClass{
+    color: red;
+}
+.logOf{
+    display: none;
+}
+.mainExit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.exit{
+    width: 200px;
+    height: 40px; 
+    margin: 0 10px;
+    box-shadow: none !important ;
+    color: #fff;
+    border-radius: 5px;
+}
+.cancel{
+    background-color: lightgray;
+}
+.signOut{
+    background-color: rgb(250, 69, 69);
+}
+.menu{
+    display: none;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    width: 15%;
+    margin: auto;
+}
+.olList{
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+.olText{
+    margin: 10px 0 15px 0 ;
+}
+.buttonForLists{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+.olButton{
+    width: 49%;
+    height: 40px;
+    color: #fff;
+    border: 0;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.ol input:focus{
+    outline: none;
+}
+.ulList{
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+.ulText{
+    margin: 10px 0 15px 0 ;
+}
+.ulButton{
+    width: 49%;
+    height: 40px;
+    color: #fff;
+    border: 0;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.ul input:focus{
+    outline: none;
+}
+.red{
+    background-color: rgb(250, 69, 69);
+}
+.green{
+    background-color: lightgreen;
+}
+.createTable{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.side p {
+    margin: 10px 0;
+}
+.side{
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+}
+.side input{
+    padding: 10px;
+}
+select{
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid rgb(216, 216, 216) 
+}
+.createTable input{ 
+    border-radius: 5px;
+    border: 2px solid rgb(216, 216, 216) ;
+}
+.createTable input:focus{
+    outline: none;
+}
+.borderTrue{
+    border: 2px solid green !important;
+}
+.borderFalse{
+    border: 2px solid red !important;
+}

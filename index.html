@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="edit">
+            <div class="tableList">
+                <button disabled><i class="fas fa-list"></i></button>
+            </div>
+            <div class="fonts">
+                <button class="bold"><i class="fas fa-bold"></i></button>
+                <button class="italic"><i class="fas fa-italic"></i></button>
+                <button class="underline"><i class="fas fa-underline"></i></button>
+                <button class="strikethrough"><i class="fas fa-strikethrough"></i></button>
+            </div>
+            <div class="location">
+                <button class="left-align"><i class="fas fa-align-left"></i></button>
+                <button class="center-align"><i class="fas fa-align-center"></i></button>
+                <button class="right-align"><i class="fas fa-align-right"></i></button>
+            </div>
+            <div class="editorText">
+                <div class="fontfamily menuEdit">
+                    <button>
+                        <i class="fas fa-font"></i>
+                        <i class="fas fa-caret-down"></i>
+                    </button>
+                    <ul>
+                        <li>Arial</li>
+                        <li>Georgia</li>
+                        <li>Impact</li>
+                        <li>Tahoma</li>
+                        <li>Times New Roman</li>
+                        <li>Verdana</li>
+                    </ul>
+                </div>
+                <div class="fontsize menuEdit">
+                    <button>
+                        <i class="fas fa-text-height"></i>
+                        <i class="fas fa-caret-down"></i>
+                    </button>
+                    <ul>
+                        <li>12px</li>
+                        <li>14px</li>
+                        <li>16px</li>
+                        <li>18px</li>
+                        <li>20px</li>
+                        <li>22px</li>
+                        <li>25px</li>
+                        <li>30px</li>
+                    </ul>
+                </div>
+                <button data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <i class="fas fa-palette"></i>
+                </button>
+                <button data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    <i class="fas fa-image"></i>
+                </button>
+            </div>
+            <div class="reg">
+                <button data-bs-toggle="modal" data-bs-target="#staticBackdrop1"><i class="fas fa-lock"></i></button>
+            </div>
+            <div class="logOf">
+                <button data-bs-toggle="modal" data-bs-target="#staticBackdrop2"><i class="fas fa-unlock"></i></button>
+            </div>
+        </div>
+        <div class="menu">
+            <div class="menuButton">
+                <button class="save"><i class="fas fa-save"></i></button>
+                <button class="tables" data-bs-toggle="modal" data-bs-target="#table"><i
+                        class="fas fa-table"></i></button>
+                <button data-bs-toggle="modal" data-bs-target="#ModalOl"><i class="fas fa-list-ol"></i></button>
+                <button data-bs-toggle="modal" data-bs-target="#ModalUl"><i class="fas fa-list-ul"></i></button>
+            </div>
+        </div>
+    </header>
+    <div class="text">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, consectetur?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, consectetur?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, consectetur?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, consectetur?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, consectetur?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, consectetur?</p>
+    </div>
+    <div class="menuText">
+        <form name="f2">
+            <textarea name="text" id="" cols="250" rows="100" class="textInArea"></textarea>
+        </form>
+    </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Choose text color</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="firstLine">
+                        <div class="box green"></div>
+                        <div class="box lightgreen"></div>
+                        <div class="box lightseagreen"></div>
+                        <div class="box limegreen"></div>
+                        <div class="box lightskyblue"></div>
+                        <div class="box lightsteelblue"></div>
+
+                    </div>
+                    <div class="firstLine">
+                        <div class="box plum"></div>
+                        <div class="box darkslategrey"></div>
+                        <div class="box darkslateblue"></div>
+                        <div class="box lightyellow"></div>
+                        <div class="box lightsalmon"></div>
+                        <div class="box palevioletred"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Choose background color or image</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="changeBackground">
+                    <input type="button" value="Colors" class="activeColorChange colors">
+                    <input type="button" value="Images" class="images">
+                    <input type="button" value="Files" class="files">
+                </div>
+                <div class="modal-body">
+                    <div class="colorBackground">
+                        <div class="firstLine">
+                            <div class="boxBackgroundColor green"></div>
+                            <div class="boxBackgroundColor lightgreen"></div>
+                            <div class="boxBackgroundColor lightseagreen"></div>
+                            <div class="boxBackgroundColor limegreen"></div>
+                            <div class="boxBackgroundColor lightskyblue"></div>
+                            <div class="boxBackgroundColor lightsteelblue"></div>
+                        </div>
+                        <div class="firstLine">
+                            <div class="boxBackgroundColor plum"></div>
+                            <div class="boxBackgroundColor darkslategrey"></div>
+                            <div class="boxBackgroundColor darkslateblue"></div>
+                            <div class="boxBackgroundColor lightyellow"></div>
+                            <div class="boxBackgroundColor lightsalmon"></div>
+                            <div class="boxBackgroundColor palevioletred"></div>
+                        </div>
+                    </div>
+                    <div class="image">
+                        <div class="firstLine">
+                            <img src="image/1.jpg" alt="">
+                            <img src="image/2.jpg" alt="">
+                            <img src="image/3.jpg" alt="">
+                        </div>
+                        <div class="firstLine">
+                            <img src="image/4.jpg" alt="">
+                            <img src="image/5.jpg" alt="">
+                            <img src="image/6.jpg" alt="">
+                        </div>
+                        <div class="firstLine">
+                            <img src="image/7.jpg" alt="">
+                            <img src="image/8.jpg" alt="">
+                            <img src="image/9.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="personImage">
+                        <div class="chooseImage">
+                            <form method="post" id="file_input">
+                                <input type="file" id="file" name="file">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdrop1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header" style="display: flex; justify-content: center; align-items: center;">
+                    <h5 class="modal-title" id="staticBackdropLabel" style="font-size: 36px;">Sign In</h5>
+                </div>
+                <div class="modal-body">
+                    <form name="f1" class="f1">
+                        <input type="text" name="login" placeholder="Login here.." required pattern="^admin$"
+                            class="input">
+                        <input type="password" name="password" placeholder="Password here.." required
+                            pattern="^admin123$" class="input">
+                        <div class="append"></div>
+                        <input type="submit" value="Sign in" class="input">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdrop2" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body mainExit">
+                    <button class="cancel exit" data-bs-dismiss="modal" aria-label="Close">Cancel</button>
+                    <button class="signOut exit" data-bs-dismiss="modal" aria-label="Close">Sign out</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="ModalOl" tabindex="-1" aria-labelledby="ModalOl" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Create Ol</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form name="ol" class="ol">
+                        <p>Count li item:</p>
+                        <input type="number" class="olList olInput" placeholder="Type here.." pattern="^\d$" name="ol">
+                        <p class="olText">Type mark of list:</p>
+                        <select name="" id="" class="olList selectOl">
+                            <option class="option" value="" selected>Choose Ol type mark</option>
+                            <option value="1">1</option>
+                            <option value="I">I</option>
+                            <option value="i">i</option>
+                            <option value="A">A</option>
+                            <option value="a">a</option>
+                        </select>
+                    </form>
+                    <div class="append"></div>
+                    <div class="buttonForLists">
+                        <input type="button" value="Reset" class="olButton red olReset">
+                        <input type="button" value="Create list" class="olButton green olCreateList"
+                            data-bs-dismiss="modal" aria-label="Close">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="ModalUl" tabindex="-1" aria-labelledby="ModalUl" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Create Ul</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form name="ul" class="ul">
+                        <p>Count li item:</p>
+                        <input type="number" class="ulList ulInput" placeholder="Type here.." pattern="^\d$" name="ul">
+                        <p class="ulText">Type mark of list:</p>
+                        <select name="" id="" class="ulList selectul">
+                            <option class="option1" value="" selected>Choose Ul type mark</option>
+                            <option value="disc">disc</option>
+                            <option value="circle">circle</option>
+                            <option value="square">square</option>
+                        </select>
+                    </form>
+                    <div class="append"></div>
+                    <div class="buttonForLists">
+                        <input type="button" value="Reset" class="olButton red ulReset">
+                        <input type="button" value="Create list" class="olButton green ulCreateList"
+                            data-bs-dismiss="modal" aria-label="Close">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="table" tabindex="-1" aria-labelledby="table" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content" style="width: 650px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, 10px);">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Create table</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form name="createTable" class="createTable">
+                        <div class="left-side side">
+                            <p>Count TR:</p>
+                            <input type="number" class="tr" placeholder="Type here.." required pattern="^\d$">
+                            <p>Width of TD:</p>
+                            <input type="number" class="widthTd" placeholder="Type here.." required pattern="^\d$">
+                            <p>Width of border:</p>
+                            <input type="number" class="widthBorder" placeholder="Type here.." required pattern="^\d$">
+                            <input type="button" class="resetTable" value="Reset"
+                                style="margin: 20px 0; color: #fff; background-color: rgb(250, 69, 69); font-size: 20px;">
+                        </div>
+                        <div class="right-side side">
+                            <p>Count TD:</p>
+                            <input type="number" class="td" placeholder="Type here.." required pattern="^\d$">
+                            <p>Height of TD:</p>
+                            <input type="number" class="heightTd" placeholder="Type here.." required pattern="^\d$">
+                            <div class="styleTable createTable">
+                                <div class="left-side-style">
+                                    <p>Style of border:</p>
+                                    <select name="" id="" class="choose" required>
+                                        <option class="first" value="">Choose style</option>
+                                        <option value="dotted">dotted</option>
+                                        <option value="dashed">dashed</option>
+                                        <option value="solid">solid</option>
+                                    </select>
+                                </div>
+                                <div class="right-side-style">
+                                    <p>Color of border:</p>
+                                    <select name="" id="" required class="chooses">
+                                        <option class="second" value="">Choose color</option>
+                                        <option value="red">red</option>
+                                        <option value="blue">blue</option>
+                                        <option value="yellow">yellow</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <input type="submit" class="submitTable" value="Create table"
+                                style="margin: 20px 0; color: #fff; background-color: green; font-size: 20px;">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
